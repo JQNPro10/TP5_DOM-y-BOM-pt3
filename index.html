@@ -1,0 +1,39 @@
+<!-- 3 - Crea una web con bootstrap y js, que contenga un botón input donde se pueda cargar una tarea y un botón que al ser presionado agregue dicha tarea a una lista, cada elemento ingresado en la lista debe poder ser eliminado con un botón creado para ese fin.  -->
+<!DOCTYPE html>
+<html lang="es" data-bs-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Practica de conceptos de DOM y BOM" />
+    <meta name="author" content="Joaquin Albornoz Bresla" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Practica de DOM y BOM</title>
+  </head>
+  <body>
+    <main class="my-5">
+      <div class="container text-center">
+        <h2>Ejercicio 3</h2>
+        <div class="row justify-content-center mt-5">
+          <div class="col-6">
+            <input
+              class="form-control"
+              type="text"
+              id="input"
+              placeholder="Ingrese una tarea"
+            />
+            <button
+              type="submit"
+              class="btn btn-success btn-block mt-3"
+              id="btnAgregar"
+            >
+              Agregar tarea
+            </button>
+            <ul class="list-group mt-3" id="tareas"></ul>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="./app.js"></script>
+  </body>
+</html>
