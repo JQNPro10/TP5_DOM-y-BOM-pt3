@@ -15,10 +15,12 @@ btnAgregar.addEventListener("click", () => {
 
         const spanTarea = document.createElement("span");
         spanTarea.textContent = tarea;
+        spanTarea.style.wordBreak = "break-word";
+        spanTarea.style.flex = "1";
 
         const eliminarBoton = document.createElement("button");
         eliminarBoton.className = "btn btn-danger ms-3";
-        eliminarBoton.textContent = "Eliminar";
+        eliminarBoton.textContent = "X";
         eliminarBoton.addEventListener("click", () => {
             tareas.removeChild(elementoLista);
         });
